@@ -9,14 +9,14 @@ with the nearest airports; by clicking the airport name, the user will see the c
 1. Web and iPad wireframes
    ![imageAlt](https://i.imgur.com/zNfEgyi.png)
 2. Web and iPad prototype
-   !(imageAlt)[https://i.imgur.com/OgMoc7k.png]
-   !(imageAlt)[https://i.imgur.com/QGMKjic.png]
-   !(imageAlt)[https://i.imgur.com/DPtpdNs.png]
+   ![imageAlt](https://i.imgur.com/OgMoc7k.png)
+   ![imageAlt](https://i.imgur.com/QGMKjic.png)
+   ![imageAlt](https://i.imgur.com/DPtpdNs.png)
 3. iPhone X/XS wireframes
-   !(imageAlt)[https://i.imgur.com/i273Phz.png]
+   ![imageAlt](https://i.imgur.com/i273Phz.png)
 4. iPhone X/XS prototype
-   !(imageAlt)[https://i.imgur.com/PnjZEiz.png]
-   !(imageAlt)[https://i.imgur.com/rvbqgCs.png]
+   ![imageAlt](https://i.imgur.com/PnjZEiz.png)
+   ![imageAlt](https://i.imgur.com/rvbqgCs.png)
 
 #APIs used:
 OpenWeather API
