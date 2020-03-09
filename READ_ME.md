@@ -7,7 +7,7 @@ with the nearest airports; by clicking the airport name, the user will see the c
 #Wireframes:
 
 1. Web and iPad wireframes
-   !(imageAlt)[https://i.imgur.com/zNfEgyi.png]
+   ![imageAlt](https://i.imgur.com/zNfEgyi.png)
 2. Web and iPad prototype
    !(imageAlt)[https://i.imgur.com/OgMoc7k.png]
    !(imageAlt)[https://i.imgur.com/QGMKjic.png]
@@ -20,7 +20,7 @@ with the nearest airports; by clicking the airport name, the user will see the c
 
 #APIs used:
 OpenWeather API
-AeroDataBox API
+Developer Aero API
 TravelPayouts API
 
 #MVP goals:
