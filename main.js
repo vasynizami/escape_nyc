@@ -4,6 +4,7 @@ const request = "http://api.travelpayouts.com/v1/prices/monthly?currency=USD&ori
 // const today = new Date().toISOString().slice(0, 10);
 const getFlight = async () => {
   const resp = await axios.get(request);
+  debugger;
 }
 getFlight();
 
