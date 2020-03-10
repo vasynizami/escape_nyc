@@ -14,9 +14,6 @@ button.addEventListener("click", async () => {
   const destination = user_input.value;
   const request = `http://api.travelpayouts.com/v1/prices/cheap?origin=JFK&destination=${destination}&depart_date=${thisMonth}&token=${api_key}&currency=USD`;
   const response = await axios.get(request);
-  // debugger;
-  // console.log(response);
-  // debugger;
   let res = response.data.data;
   let airport = res[Object.keys(res)[0]];
   let flights = airport[Object.keys(airport)[0]];
@@ -25,15 +22,19 @@ button.addEventListener("click", async () => {
   console.log(Object.keys(airport).length);
 
   for (let i = 0; i < Object.keys(airport).length; i += 1) {
-    // debugger;
+   
     console.log(airport[Object.keys(airport)[i]]);
     responseDiv.innerHTML += `
-      <p>${airport[Object.keys(airport)[i]].price}</p>
-      <p>${airport[Object.keys(airport)[i]].airline}</p>
-      <p>${airport[Object.keys(airport)[i]].flight_number}</p>
-      <p>${airport[Object.keys(airport)[i]].departure_at}</p>
+      <p>Flight price in USD</p>
+      <p>${flights.price}</p>
+      <p>Airline</p>
+      <p>${flights.airline}</p>
+      <p>Flight number</p>
+      <p>${flights.flight_number}</p>
+      <p>Flight departs</p>
+      <p>${flights.departure_at}</p>
   `;
-    console.log(i);
+  
   }
 });
 
