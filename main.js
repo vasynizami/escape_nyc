@@ -13,8 +13,7 @@ const responseDiv = document.querySelector("div");
 
 const request = `http://api.travelpayouts.com/v1/prices/cheap?origin=JFK&destination=${destination}&depart_date=${thisMonth}&token=${api_key}&currency=USD`;
 
-button.addEventListener("submit", async (event) => {
-  event.preventDefault();
+button.addEventListener("click", async () => {
   const response = await axios.get(request);
   debugger;
   let flights = response.data.data;
