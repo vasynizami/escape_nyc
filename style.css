@@ -29,6 +29,12 @@ button {
   margin: 10px auto;
 }
 
+#table {
+  display: flex;
+}
 #results {
   display: flex;
+}
+#tableheads p, #results div p {
+  height: 60px;
 }
