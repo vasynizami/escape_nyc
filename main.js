@@ -20,19 +20,20 @@ button.addEventListener("click", async () => {
   let airport = res[Object.keys(res)[0]];
 
   theads.innerHTML += `
+  <div>
     <p>Flight price in USD</p>
     <p>Airline</p>
     <p>Flight number</p>
     <p>Flight departs</p>
     <p>Flight returns</p>
-
+  <div>
   `
 
   for (let i = 0; i < Object.keys(airport).length; i += 1) {
 
     let flights = airport[Object.keys(airport)[i]];
    
-    // console.log(flights);
+    console.log(flights);
 
     responseDiv.innerHTML += `
 
@@ -43,9 +44,9 @@ button.addEventListener("click", async () => {
       
       <p>${flights.flight_number}</p>
       
-      <p>${flights.departure_at}</p>
+      <p>${flights.departure_at.slice(0, 10)}</p>
       
-      <p>${flights.return_at}</p>
+      <p>${flights.return_at.slice(0, 10)}</p>
     </div>
   `;
   
