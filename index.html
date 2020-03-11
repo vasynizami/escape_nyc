@@ -8,21 +8,21 @@
   <title>Document</title>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="main.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Inter|Bellota+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-
+  <header>
   <h1>Escape NYC</h1>
   
-  <input placeholder="type in an IATA city/airport code"></input>
-  <a href="#">
+  <input placeholder="type in an IATA city/airport code" onfocus="this.placeholder = ''"></input>
+  <a>
     <button>Get me outta here!</button>
   </a>
-
+</header>
   <div id="table">
     <div id="tableheads"></div>
     <div id="results"></div>
