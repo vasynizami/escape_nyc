@@ -32,8 +32,7 @@ button.addEventListener("click", async () => {
 
       theads.innerHTML = `
         <div>
-          <p>Flight price in USD</p>
-          <p>Airline</p>
+          <p>Flight price</p>
           <p>Flight number</p>
           <p>Flight departs</p>
           <p>Flight returns</p>
@@ -51,9 +50,8 @@ button.addEventListener("click", async () => {
 
         responseDiv.innerHTML += `
           <div>
-            <p>${flights.price}</p>
-            <p>${flights.airline}</p>
-            <p>${flights.flight_number}</p>
+            <p>$${flights.price}</p>
+            <p>${flights.airline} ${flights.flight_number}</p>
             <p>${flights.departure_at.slice(0, 10)}</p>
             <p>${flights.return_at.slice(0, 10)}</p>
           </div>
