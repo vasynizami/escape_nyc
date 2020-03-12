@@ -101,14 +101,15 @@ button {
   transform: translateX(0);
 }
 
+.weather div {
+  margin-top: 70%;
+}
+
 h2 {
   font-family: "Bellota Text", sans-serif;
   color: #544E61;;
   font-size: 36px;
-}
-
-.weather div {
-  margin-top: 70%;
+  padding-bottom: 5px;
 }
 
 .weather div p {

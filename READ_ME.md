@@ -1,37 +1,39 @@
-#Title: Escaping NYC
+#Title: Escape NYC
 
-This app will allow a user to search for the cheapest flights in the current month. They just
-have to type in the city name, then the weather forecast for the current month will appear alongside
-with the nearest airports; by clicking the airport name, the user will see the cheapest flights from JFK.
+This app will allow a user to search for the cheapest flights in the current month. They type in the city/airport name in IATA code, click the button and the list of the cheapest flights from NYC appears. The sidebar makes an API call to OpenWeather and Giphy to show weather conditions in NYC.
 
 #Wireframes:
 
-1. Web and iPad wireframes
-   ![imageAlt](https://i.imgur.com/lB0injf.png)
-2. Web and iPad prototypes
-   ![imageAlt](https://i.imgur.com/38XxucJ.png)
-   ![imageAlt](https://i.imgur.com/WviGGxF.png)
-   ![imageAlt](https://i.imgur.com/eEbZz55.png)
-3. iPhone X/XS wireframe
-   ![imageAlt](https://i.imgur.com/M8oYpW0.png)
-4. iPhone X/XS prototypes
-   ![imageAlt](https://i.imgur.com/nYY65bY.png)
-   ![imageAlt](https://i.imgur.com/0jwo6Qc.png)
+1. Wireframes
+   ![imageAlt](https://i.imgur.com/k8HPghg.png)
+2. Prototypes
+   ![imageAlt](https://i.imgur.com/NogPJyw.png)
+   ![imageAlt](https://i.imgur.com/Tm7TM9V.png)
+   ![imageAlt](https://i.imgur.com/wWpuQql.png)
 
 #APIs used:
+
 OpenWeather API,
-Developer Aero API,
+Giphy API,
 TravelPayouts API
+
+#plane icon img:
+
+https://commons.wikimedia.org/wiki/File:White_plane_icon_2.png
+
+#external code used:
+
+recet.css from https://gist.github.com/DavidWells/18e73022e723037a50d6
 
 #MVP goals:
 
-1. the app will be built with HTML, CSS, and JavaScript.
-2. the app will use Axios to consume data from 3 external sources, and render that data into the DOM.
-3. the search results will be displayed using flexbox.
-4. the app will have 2 media queries for 3 screen sizes (reg display, tablet and mobile).
-5. the app will be hosted on Surge.
+1. the app built with HTML, CSS, and JavaScript.
+2. the app uses Axios to consume data from 3 external sources and renders that data into the DOM.
+3. the search results displayed using flexbox.
+4. the app have 2 media queries for 3 screen sizes (reg display, iPad and iPhone 6/7/8 plus).
+5. the app hosted on Surge.
 
 #post-MVP goals:
 
-1. design the app beautifully.
+1. add css animation.
 2. consult with a UX student to make the app more user-friendly.
