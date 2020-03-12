@@ -25,7 +25,7 @@ button.addEventListener("click", async () => {
   if (destination.length !== 3) {
     alert("Please, enter the IATA code!")
   } else {
-      const request = `http://api.travelpayouts.com/v1/prices/cheap?origin=JFK&destination=${destination}&depart_date=${thisMonth}&token=${api_key}&currency=USD`;
+      const request = `http://cors-anywhere.herokuapp.com/api.travelpayouts.com/v1/prices/cheap?origin=JFK&destination=${destination}&depart_date=${thisMonth}&token=${api_key}&currency=USD`;
       const response = await axios.get(request);
       let res = response.data.data;
       let airport = res[Object.keys(res)[0]];
