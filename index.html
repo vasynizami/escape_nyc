@@ -8,6 +8,7 @@
   <title>Document</title>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="main.js"></script>
+  <script defer src="toggle.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Inter|Bellota+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
@@ -15,19 +16,29 @@
 
 
 <body>
-
   <header>
-
-    <h1>Escape NYC</h1>
-    <input placeholder="type in an IATA city/airport code" onfocus="this.placeholder = ''"></input>
-    <button>Get me outta here!</button>
-    
-  </header>
+  <h1>Escape NYC</h1>
   
-  <div id="table">
-    <div id="tableheads"></div>
-    <div id="results"></div>
-  </div>
+  <input placeholder="type in an IATA city/airport code" onfocus="this.placeholder = ''"></input>
+  <a>
+    <button>Get me outta here!</button>
+  </a>
+</header>
+
+<nav>
+  <a href="#" class="toggle_bar">
+    <img src="icon_plane.png"> 
+  </a>
+</nav>
+
+<div class="weather">
+
+</div>
+
+<div id="table">
+  <div id="tableheads"></div>
+  <div id="results"></div>
+</div>
  
 </body>
 
