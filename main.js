@@ -18,9 +18,9 @@ const theads = document.querySelector("#tableheads");
 //----------------------------------------
 
 button.addEventListener("click", async () => {
-  if (window.screen.width <= 414) {
-    button.setAttribute("href", "#results");
-  }
+  // if (window.screen.width <= 414) {
+  //   button.setAttribute("href", "#results");
+  // }
   const destination = user_input.value;
   if (destination.length !== 3) {
     alert("Please, enter the IATA code!")
