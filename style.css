@@ -130,6 +130,11 @@ button {
     padding-left: 10px;
     padding-right: 10px;
   }
+  
+  .weather img {
+    width: 50%;
+    padding-top: 500px;
+  }
 
 }
 
@@ -159,6 +164,27 @@ button {
   #results div {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  nav {
+    padding-left: 5px;
+  }
+
+  nav a img {
+    width: 50%;
+  }
+  
+  .weather {
+    background-color: rgba(255,211,99, 1);
+    width: 100%;
+  }
+  
+  .weather div {
+    margin-top: 50%;
+  }
+
+  .weather img {
+    padding-top: 20px;
   }
 
 }
