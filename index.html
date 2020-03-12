@@ -16,25 +16,27 @@
 
 
 <body>
-  <header>
-  <h1>Escape NYC</h1>
-  
-  <input placeholder="type in an IATA city/airport code" onfocus="this.placeholder = ''"></input>
-  <a>
-    <button>Get me outta here!</button>
-  </a>
-</header>
 
+  <header>
+    <h1>Escape NYC</h1>
+    <input placeholder="type in IATA city/airport code" onfocus="this.placeholder = ''"></input>
+    <a>
+      <button>Get me outta here!</button>
+    </a>
+  </header>
+
+<!-- nav for side bar -->
 <nav>
   <a href="#" class="toggle_bar">
     <img src="icon_plane.png"> 
   </a>
 </nav>
 
+<!-- side bar -->
 <div class="weather">
-
 </div>
 
+<!-- results of API call to travelpayouts go here -->
 <div id="table">
   <div id="tableheads"></div>
   <div id="results"></div>
