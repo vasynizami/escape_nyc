@@ -4,7 +4,7 @@
 //----------------------------------------
 //----------------------------------------
 
-const button = document.querySelector("a");
+const button = document.querySelector("button");
 const thisMonth = new Date().toISOString().slice(0, 7);
 const api_key = "c2e79b2b6b6571705e78656293cbbc8a";
 const user_input = document.querySelector("input");
