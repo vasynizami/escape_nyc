@@ -4,7 +4,7 @@
 //----------------------------------------
 //----------------------------------------
 
-const button = document.querySelector("button");
+const button = document.querySelector("a");
 const thisMonth = new Date().toISOString().slice(0, 7);
 const api_key = "c2e79b2b6b6571705e78656293cbbc8a";
 const user_input = document.querySelector("input");
@@ -18,9 +18,9 @@ const theads = document.querySelector("#tableheads");
 //----------------------------------------
 
 button.addEventListener("click", async () => {
-  // if (window.screen.width <= 414) {
-  //   button.setAttribute("href", "#results");
-  // }
+  if (window.screen.width <= 414) {
+    button.setAttribute("href", "#results");
+  }
   const destination = user_input.value;
   if (destination.length !== 3) {
     alert("Please, enter the IATA code!")
