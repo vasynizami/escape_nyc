@@ -119,6 +119,7 @@ line-height: 1.2em;
 
 .weather img {
   padding-top: 20px;
+  width: 200px;
 }
 
 
@@ -136,7 +137,7 @@ line-height: 1.2em;
   }
   
   .weather img {
-    width: 50%;
+    width: 75%;
     padding-top: 500px;
   }
 
