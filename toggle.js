@@ -1,6 +1,5 @@
 //code for sidebar API calls to openWeather and giphy
 
-
 const openWeather = async () => {
 
   const api = "a9774b2823a4f33972a6f727864cbae9";
@@ -25,7 +24,6 @@ const openWeather = async () => {
     const url = "http://api.giphy.com/v1/gifs/search";
     const weatherDiv = document.querySelector(".weather");
     const resp = await axios.get(`${url}?q=${response.data.weather[0].description}&api_key=${api}`);
-    
     //display result
     weatherDiv.innerHTML += `
       <img src="${resp.data.data[0].images.fixed_height.url}"/>`
