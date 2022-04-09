@@ -3,7 +3,7 @@
 const button = document.querySelector("button");
 const thisMonth = new Date().toISOString().slice(0, 7);
 const url = "https://api.travelpayouts.com/v1/prices/cheap";
-const api_key = "c2e79b2b6b6571705e78656293cbbc8a";
+const api_key = config.TRAVEL_API_KEY;
 const user_input = document.querySelector("input");
 const responseDiv = document.querySelector("#results");
 const theads = document.querySelector("#tableheads");
