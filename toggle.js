@@ -3,7 +3,7 @@
 const openWeather = async () => {
 
   const api = config.WEATHER_API_KEY;
-  const base_url = "http://api.openweathermap.org/data/2.5/weather?q=manhattan&";
+  const base_url = "https://api.openweathermap.org/data/2.5/weather?q=manhattan&";
   const weatherDiv = document.querySelector(".weather");
   const response = await axios.get(`${base_url}units=imperial&appid=${api}`);
 
@@ -21,7 +21,7 @@ const openWeather = async () => {
   const giphy = async () => {
 
     const api = config.GIPHY_API_KEY;
-    const url = "http://api.giphy.com/v1/gifs/search";
+    const url = "https://api.giphy.com/v1/gifs/search";
     const weatherDiv = document.querySelector(".weather");
     const resp = await axios.get(`${url}?q=${response.data.weather[0].description}&api_key=${api}`);
     //display result
