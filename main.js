@@ -1,30 +1,26 @@
+// TODO: publish server online, make front end connect to online proxy, change error handling, change weather report for destination
 //vars for API call to travelpayouts
 
-const button = document.querySelector("button");
+const button = document.querySelector('button');
 const thisMonth = new Date().toISOString().slice(0, 7);
-const url = "https://api.travelpayouts.com/v1/prices/cheap";
-const api_key = config.TRAVEL_API_KEY;
-const user_input = document.querySelector("input");
-const responseDiv = document.querySelector("#results");
-const theads = document.querySelector("#tableheads");
+const url = 'http://localhost:3000/prices/cheap';
+const user_input = document.querySelector('input');
+const responseDiv = document.querySelector('#results');
+const theads = document.querySelector('#tableheads');
 
-button.addEventListener("click", async () => {
-  
+button.addEventListener('click', async () => {
   const destination = user_input.value;
 
   //check that user entered an IATA code
   if (destination.length !== 3) {
-
-    alert("Please, enter the IATA code!");
-
+    alert('Please, enter the IATA code!');
   } else {
+    const request = `${url}?origin=JFK&destination=${destination}&depart_date=${thisMonth}&currency=USD`;
 
-    const request = `${url}?origin=JFK&destination=${destination}&
-      depart_date=${thisMonth}&token=${api_key}&currency=USD`;
-    
     const response = await axios.get(request);
     let res = response.data.data;
     let airport = res[Object.keys(res)[0]];
+    console.log(res);
 
     theads.innerHTML = `
       <div>
@@ -34,18 +30,19 @@ button.addEventListener("click", async () => {
         <p>Flight returns</p>
       <div>
     `;
-    
+
     //preparing to populate the responseDiv with results
-    //give default empty string value to responseDiv so that it resets 
+    //give default empty string value to responseDiv so that it resets
     //the search results every time the input value is changed
-    responseDiv.innerHTML = "";
+    responseDiv.innerHTML = '';
+    if ((res = {})) {
+      responseDiv.innerHTML += `Oops! We don't have cheap flights for this destination`;
+    } else {
+      for (let i = 0; i < Object.keys(airport).length; i += 1) {
+        let flights = airport[Object.keys(airport)[i]];
 
-    for (let i = 0; i < Object.keys(airport).length; i += 1) {
-
-      let flights = airport[Object.keys(airport)[i]];
-
-      //display results
-      responseDiv.innerHTML += `
+        //display results
+        responseDiv.innerHTML += `
         <div>
           <p>$${flights.price}</p>
           <p>${flights.airline} ${flights.flight_number}</p>
@@ -53,6 +50,7 @@ button.addEventListener("click", async () => {
           <p>${flights.return_at.slice(0, 10)}</p>
         </div>
       `;
+      }
     }
   }
-})
+});
